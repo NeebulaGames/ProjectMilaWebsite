@@ -1,0 +1,33 @@
+.o-footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: $brand-primary-1;
+}
+
+.o-footer__container {
+  margin: auto;
+  width: 100%;
+  max-width: $o-main__item--width;
+  border-top: $border-width-1 solid $white-0;
+}
+
+.o-footer__item {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: $spacing-4 0 3.5rem;
+}
+
+.o-footer__item--nav {
+  text-align: right;
+}
+
+.o-footer__link, .o-footer__text {
+  color: $white-0;
+  font-size: $font-size--1;
+}
+
+.o-footer__link {
+  padding: $spacing--3 $spacing-1;
+}

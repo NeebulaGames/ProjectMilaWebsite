@@ -1,0 +1,50 @@
+.o-hero {
+  width: 100%;
+  display: inline-block;
+  z-index: $z-index-0;
+
+  &:before {
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(//files.slack.com/files-pri/T2MCN6E2Z-F7APJ2TUG/projectmila_highresscreenshot03.jpg);
+  }
+  &:after {
+    content: "";
+    background-color: $shadow-15;
+  }
+}
+
+.o-hero, .o-hero:before, .o-hero:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.o-hero__headline {
+  position: absolute;
+  width: 500px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  padding: $spacing-1 0;
+  z-index: $z-index-after;
+}
+
+.o-hero__title {
+  color: $white-0;
+  font-size: $font-size-4;
+  font-weight: $font-weight--1;
+}
+
+.o-hero__subtitle {
+  color: $white-0;
+  font-size: 1.33rem;
+  line-height: $line-height-4;
+  font-weight: $font-weight--1;
+  padding-bottom: $spacing--2;
+  border-bottom: $border-width-1 solid $white--1;
+}

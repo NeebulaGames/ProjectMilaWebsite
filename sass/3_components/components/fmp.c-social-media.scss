@@ -1,0 +1,15 @@
+* + .c-social-media {
+  margin-left: $spacing-1;
+}
+
+.c-social-media {
+  display: inline-block;
+  vertical-align: middle;
+  height: 17px;
+}
+
+.c-social-media__link {
+  & + & {
+    margin-left: $spacing--1;
+  }
+}

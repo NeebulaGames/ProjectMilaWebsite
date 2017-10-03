@@ -1,0 +1,19 @@
+.i-facebook, .i-twitter, .i-linkedin, .i-instagram, .i-github, .i-web {
+  width: 17px;
+  height: 17px;
+  transition: $transition-base;
+  fill: $white-0;
+
+  .c-social-media__link:hover &, .c-social-media__link:focus & {
+    fill: $brand-primary-0;
+  }
+  .c-card__social & {
+    width: 21px;
+    height: 21px;
+    fill: $neutral-1;
+
+    &:hover, &:focus {
+      fill: $brand-primary-1;
+    }
+  }
+}

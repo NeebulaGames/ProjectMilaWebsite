@@ -1,0 +1,65 @@
+* + .c-button {
+  margin-top: $spacing-5;
+}
+
+.c-button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: $spacing--1 $spacing-4;
+  background-color: $brand-primary-0;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+  transition: $transition-base;
+
+  .o-main__container--alt & {
+    min-width: 150px;
+  }
+  &:hover, &:focus {
+    background-color: $brand-primary-1;
+    box-shadow: 0 0 33px rgba(0,0,0,.05);
+
+    .o-main__container--alt & {
+      background-color: $brand-primary-2;
+    }
+  }
+}
+
+.c-button--linear {
+  padding: $spacing--4 $spacing--2;
+  border: $border-width-1 solid $white-0;
+  background-color: transparent;
+  font-size: $font-size-0;
+  line-height: 1;
+
+  &:hover, &:focus {
+    border-color: $brand-primary-0;
+    background-color: transparent;
+  }
+}
+
+.c-button__icon, .c-button__text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c-button__icon + .c-button__text {
+  padding-left: $spacing--3;
+}
+
+.c-button__text {
+  color: $white-0;
+  transition: $transition-base;
+
+  .c-button:hover &, .c-button:focus & {
+    color: $white-0;
+  }
+  .c-button--linear:hover &, .c-button--linear:focus & {
+    color: $brand-primary-0;
+  }
+  .o-main__container--alt & {
+    display: inline;
+  }
+}

@@ -1,0 +1,29 @@
+$o-main__container--padding: 6.5rem 0;
+$o-main__item--width: 1050px;
+
+.o-main {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.o-main__container {
+  display: inline-block;
+  width: 100%;
+  padding: $o-main__container--padding;
+  background-color: $white-0;
+
+  &.o-main__container--alt {
+    color: $white-0;
+    background-color: $brand-primary-1;
+    border-top: $border-width-1 solid $brand-primary-2;
+  }
+}
+
+.o-main__item {
+  max-width: $o-main__item--width;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}

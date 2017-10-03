@@ -1,0 +1,35 @@
+// --------- Media query mapping --------- //
+
+/*
+  CONTENT FIRST!!!
+  We should use media queries focusing on the content, do not focus in the
+  classical approach to mobile/tablet/desktop pseudo-standards.
+
+  You can create new ones, BUT always using min-width, never max-width
+  If we need in the future mobile last, we will do the opposite approach
+*/
+
+/*
+  RULES
+  EMs are mandatory, because media-queries attack directly to the root
+*/
+
+/* TODO: In the future we should use a LESS version of sass-mq */
+
+
+// ** Basic mq ** //
+$mediaquery-0: only screen and (min-width: 30em); // 480px at <html> 16px
+$mediaquery-1: only screen and (min-width: 48em); // 768px at <html> 16px
+$mediaquery-2: only screen and (min-width: 62.38em); // 998px at <html> 16px
+
+
+//Deprecate
+$mediaquery-0--max: only screen and (max-width: 30em); // 480 at <html> 16px
+$mediaquery-until-1: only screen and (max-width: 767px); // 767px
+$mediaquery-1--max: only screen and (max-width: 48em); // 768px at <html> 16px
+$mediaquery-2--max: only screen and (max-width: 62.38em); // 998px at <html> 16px
+
+// ** Custom mq ** //
+
+
+// @mq-{{em size without unit}}: only screen and (min-width: {{size}});

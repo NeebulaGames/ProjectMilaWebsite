@@ -1,0 +1,17 @@
+// Transitions
+
+// Element hovers, dropdowns, ...
+$transition-base: 0.3s ease all;
+
+$transition-max-height: 0.5s cubic-bezier(0.55, 0.45, 0.35, 1) max-height;
+
+$transition-loader: 1.0s linear infinite;
+$transition-spinner: 2.0s infinite ease-in-out;
+
+
+// Dropdown icon
+$transition-arrow-base: rotate3d(0,0,0,0);
+$transition-arrow-active: rotate3d(1, 0, 0,-180deg);
+
+// Center in the unknown
+$transition-center-in-the-unknown: translate(-50%, -50%);

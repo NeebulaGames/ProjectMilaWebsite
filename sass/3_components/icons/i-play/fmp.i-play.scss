@@ -1,0 +1,12 @@
+.i-play {
+  width: 20px;
+  height: 20px;
+}
+
+.i-play__content {
+  fill: $white-0;
+  transition: $transition-base;
+  .c-button:hover &, .c-button:focus & {
+    fill: $brand-primary-0;
+  }
+}

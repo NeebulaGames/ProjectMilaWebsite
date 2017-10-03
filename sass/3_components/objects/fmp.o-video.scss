@@ -1,0 +1,14 @@
+.o-video {
+  position: relative;
+  height: 500px;
+  padding: 20px;
+}
+
+.o-video__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

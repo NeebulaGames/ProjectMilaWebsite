@@ -1,0 +1,30 @@
+// -------- Colors -------- //
+// Lighten and darken functions are completely forbidden
+// We should use rgb and rgba colors to understand where the colors come and go
+
+// Brand colors
+$brand-primary--2: #f0f8ff; //Lightest blue, use in backgrounds
+$brand-primary--1: #d5e2ed; //Lighter blue, use in borders
+$brand-primary-0: #19C4EF; // Purple. Primary color
+$brand-primary-1: #28314e; //Dark blue.
+$brand-primary-2: #161d32; //Darkest blue.
+
+
+// Neutral colors
+$neutral--1: #6D6D6D; // New Descriptions or secondary texts
+$neutral-0: #3C3C3C; // Text / Invert
+$neutral-1: #949494; // Border or text
+
+$white--1: rgba(256, 256, 256, 0.15); // White with less opacity
+$white-0: #FFFFFF; // White
+
+
+// TODO: Box shadow & Text Shadow
+$shadow--3: rgba(0, 0, 0, 0.075);
+$shadow--2: rgba(0, 0, 0, 0.175);
+$shadow--1: rgba(0, 0, 0, 0.25);
+$shadow-0: rgba(0, 0, 0, 0.4);
+$shadow-1: rgba(0, 0, 0, 0.5);
+$shadow-15: rgba(0, 0, 0, 0.7);
+$shadow-2: rgba(0, 0, 0, 0.8);
+$shadow-3: rgba(0, 0, 0, 1);

@@ -68,6 +68,9 @@
     .o-blob--centered & {
       text-align: center;
     }
+    .o-blob--centered & + & {
+      margin-top: 5rem;
+    }
     &:nth-child(odd) {
       padding-right: $spacing-5;
     }
@@ -75,7 +78,7 @@
       padding-left: $spacing-5;
     }
     & + & {
-      margin-top: 5rem;
+      margin-top: 0;
     }
   }
 

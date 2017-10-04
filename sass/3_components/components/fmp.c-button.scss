@@ -1,5 +1,9 @@
 * + .c-button {
-  margin-top: $spacing-0;
+  margin-top: $spacing-3;
+
+  .o-hero & {
+    margin-top: $spacing-0;
+  }
 }
 
 .c-button {

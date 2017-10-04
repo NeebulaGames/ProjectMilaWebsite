@@ -25,7 +25,8 @@
 
 .o-hero__headline {
   position: absolute;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -60%);
@@ -36,15 +37,38 @@
 
 .o-hero__title {
   color: $white-0;
-  font-size: $font-size-4;
+  font-size: $font-size-3;
   font-weight: $font-weight--1;
 }
 
 .o-hero__subtitle {
   color: $white-0;
-  font-size: 1.33rem;
-  line-height: $line-height-4;
+  font-size: 1.15rem;
   font-weight: $font-weight--1;
+  line-height: $line-height-1;
   padding-bottom: $spacing--2;
-  border-bottom: $border-width-1 solid $white--1;
+}
+
+.o-hero__title + .o-hero__subtitle {
+  margin-top: $spacing--2;
+}
+
+.o-hero__title, .o-hero__subtitle {
+  display: inline-block;
+  margin: 0 $spacing-0;
+}
+
+
+@media #{$mediaquery-2} {
+  .o-hero__title {
+    font-size: $font-size-4;
+  }
+  .o-hero__subtitle {
+    font-size: 1.33rem;
+    line-height: $line-height-4;
+    border-bottom: $border-width-1 solid $white--1;
+  }
+  .o-hero__title + .o-hero__subtitle {
+    margin-top: 0;
+  }
 }

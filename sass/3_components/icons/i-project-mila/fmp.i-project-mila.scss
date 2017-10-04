@@ -1,8 +1,16 @@
 .i-project-mila {
-  width: 275px;
+  width: 150px;
   height: auto;
+  vertical-align: middle;
 }
 
 .i-project-mila mask, .i-project-mila path {
   fill: $white-0;
+}
+
+@media #{$mediaquery-2} {
+  .i-project-mila {
+    width: 275px;
+    height: auto;
+  }
 }

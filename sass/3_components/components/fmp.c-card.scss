@@ -1,15 +1,16 @@
-$c-card__picture--size: 145px;
-
 .c-card {
   display: inline-block;
   vertical-align: top;
-  width: 33.33%;
+  width: 100%;
+
+  & + & {
+    margin-top: 3.5rem;
+  }
 }
 
 .c-card__container {
   margin: auto;
   max-width: 72.5%;
-  min-height: 363.8px;
   padding: $spacing-4;
   background-color: $white-0;
   box-shadow: 0 0 33px rgba(0,0,0,.05);
@@ -22,8 +23,8 @@ $c-card__picture--size: 145px;
 }
 
 .c-card__picture {
-  width: $c-card__picture--size;
-  height: $c-card__picture--size;
+  width: 115px;
+  height: 115px;
 }
 
 .c-card__name, .c-card__position {
@@ -60,4 +61,37 @@ $c-card__picture--size: 145px;
 
 .c-card__link + .c-card__link {
   margin-left: $spacing--3;
+}
+
+
+@media screen and (min-width: 600px) {
+  .c-card {
+    width: 50%;
+
+    & + & {
+      margin-top: 0;
+    }
+    .o-blob__item:last-child &:last-child {
+      margin-top: 3.5rem;
+    }
+  }
+
+  .c-card__container {
+    min-height: 363.8px;
+  }
+}
+
+@media #{$mediaquery-2} {
+  .c-card {
+    width: 33.33%;
+
+    .o-blob__item:last-child &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  .c-card__picture {
+    width: 145px;
+    height: 145px;
+  }
 }

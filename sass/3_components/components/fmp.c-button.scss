@@ -1,5 +1,5 @@
 * + .c-button {
-  margin-top: $spacing-5;
+  margin-top: $spacing-0;
 }
 
 .c-button {
@@ -14,9 +14,6 @@
   border: none;
   transition: $transition-base;
 
-  .o-main__container--alt & {
-    min-width: 150px;
-  }
   &:hover, &:focus {
     background-color: $brand-primary-1;
     box-shadow: 0 0 33px rgba(0,0,0,.05);
@@ -59,7 +56,20 @@
   .c-button--linear:hover &, .c-button--linear:focus & {
     color: $brand-primary-0;
   }
-  .o-main__container--alt & {
-    display: inline;
+}
+
+@media #{$mediaquery-2} {
+  * + .c-button {
+    margin-top: $spacing-5;
+  }
+  .c-button {
+    .o-main__container--alt & {
+      min-width: 150px;
+    }
+  }
+  .c-button__text {
+    .o-main__container--alt & {
+      display: inline;
+    }
   }
 }

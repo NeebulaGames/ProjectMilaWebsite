@@ -1,26 +1,21 @@
 .o-blob__item {
   display: inline-block;
-  width: 50%;
+  width: 100%;
   vertical-align: top;
-  &:nth-child(odd) {
-    padding-right: $spacing-5;
-  }
-  &:nth-child(even) {
-    padding-left: $spacing-5;
-  }
+  text-align: center;
+
   .o-blob--centered & {
     width: 100%;
-    text-align: center;
     padding: 0;
   }
   & + & {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
   }
 }
 
 .o-blob__headline {
   color: $neutral-0;
-  font-size: $font-size-3;
+  font-size: $font-size-2;
   font-weight: 400;
   line-height: 1.35;
 
@@ -32,21 +27,22 @@
 .o-blob__description {
   display: inline-block;
   width: 100%;
+
   * + & {
-    margin-top: $spacing-4;
+    margin-top: $spacing-0;
   }
   .o-blob--centered & {
-    margin-top: $spacing-2;
+    margin-top: $spacing-0;
   }
 }
 
 .o-blob__paragraph {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+
   & + & {
     margin-top: $spacing-1;
   }
   .o-blob--centered & {
-    max-width: 80%;
     margin: auto;
     line-height: $line-height-2;
   }
@@ -57,7 +53,51 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(//files.slack.com/files-pri/T2MCN6E2Z-F7B2RSQU9/projectmila_highresscreenshot11.jpg);
+  background-image: url("assets/ProjectMila_HighresScreenshot11.jpg");
+  background-position: 50%;
   border-radius: 10px;
   box-shadow: 0 0 15px $shadow-1;
+}
+
+
+@media #{$mediaquery-2} {
+  .o-blob__item {
+    width: 50%;
+    text-align: left;
+
+    .o-blob--centered & {
+      text-align: center;
+    }
+    .o-blob--centered & + & {
+      margin-top: 5rem;
+    }
+    &:nth-child(odd) {
+      padding-right: $spacing-5;
+    }
+    &:nth-child(even) {
+      padding-left: $spacing-5;
+    }
+    & + & {
+      margin-top: 0;
+    }
+  }
+
+  .o-blob__headline {
+    font-size: $font-size-3;
+  }
+
+  * + .o-blob__description {
+    margin-top: $spacing-4;
+
+    .o-blob--centered & {
+      margin-top: $spacing-2;
+    }
+  }
+
+  .o-blob__paragraph {
+    font-size: 1.15rem;
+    .o-blob--centered & {
+      max-width: 80%;
+    }
+  }
 }

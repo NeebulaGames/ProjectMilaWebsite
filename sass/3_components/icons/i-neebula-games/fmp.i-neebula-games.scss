@@ -1,11 +1,17 @@
 .i-neebula-games {
-  width: 175px;
+  width: 100px;
   height: auto;
   fill: $white-0;
-
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: $spacing-3;
+  padding: $spacing-0;
   opacity: .33;
+}
+
+@media #{$mediaquery-2} {
+  .i-neebula-games {
+    width: 175px;
+    padding: $spacing-3;
+  }
 }

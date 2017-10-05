@@ -1,5 +1,5 @@
 * + .o-form {
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
 }
 
 .o-form {
@@ -10,14 +10,14 @@
 
   > * {
     width: 100%;
+    font-size: 1.05rem;
     display: inline-block;
-    font-size: 1.15rem;
     border: none;
   }
 }
 
 .o-form__input {
-  height: 45px;
+  height: 40px;
   padding: 0 $spacing-0;
   border-radius: $border-radius-1;
 
@@ -39,4 +39,18 @@
 
 * + .o-form__cta {
   margin-top: $spacing-3;
+}
+
+@media #{$mediaquery-2} {
+  * + .o-form {
+    margin-top: 4.5rem;
+  }
+
+  .o-form > * {
+    font-size: 1.15rem;
+  }
+
+  .o-form__input {
+    height: 45px;
+  }
 }

@@ -111,7 +111,7 @@
                             <img class="c-card__picture" src="assets/neebula-games-clara.png">
 
                             <span class="c-card__name">Clara García</span>
-                            <span class="c-card__position">Lear Artist and Game Designer</span>
+                            <span class="c-card__position">Lead Artist and Game Designer</span>
 
                             <div class="c-card__social">
                                 <a class="c-card__link" href="https://www.linkedin.com/in/claragarciagimeno/" target="_blank">

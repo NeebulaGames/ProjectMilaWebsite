@@ -53,12 +53,18 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("assets/ProjectMila_HighresScreenshot11.jpg");
+  background-image: url("assets/HighresScreenshot_low.jpg");
   background-position: 50%;
   border-radius: 10px;
   box-shadow: 0 0 15px $shadow-1;
 }
 
+
+@media #{$mediaquery-1} {
+  .o-blob__image {
+    background-image: url("assets/HighresScreenshot.jpg");
+  }
+}
 
 @media #{$mediaquery-2} {
   .o-blob__item {

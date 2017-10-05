@@ -7,8 +7,10 @@
     content: "";
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("assets/ProjectMila_HighresScreenshot03.jpg");
+    background-image: url("assets/ProjectMila_HighresScreenshot03_low.jpg");
+    background-position: 19% 0;
   }
+
   &:after {
     content: "";
     background-color: $shadow-15;
@@ -59,15 +61,26 @@
 }
 
 
+@media #{$mediaquery-1} {
+  .o-hero {
+    &:before {
+      background-image: url("assets/ProjectMila_HighresScreenshot03.jpg");
+      background-position: 0;
+    }
+  }
+}
+
 @media #{$mediaquery-2} {
   .o-hero__title {
     font-size: $font-size-4;
   }
+
   .o-hero__subtitle {
     font-size: 1.33rem;
     line-height: $line-height-4;
     border-bottom: $border-width-1 solid $white--1;
   }
+
   .o-hero__title + .o-hero__subtitle {
     margin-top: 0;
   }
